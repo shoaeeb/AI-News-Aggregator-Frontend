@@ -10,7 +10,7 @@ const HomePage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_BASE_URL = "http://localhost:5000/api"; // Define base URL
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL; // Define base URL
 
   //  API function
   const fetchNews = async (category) => {
